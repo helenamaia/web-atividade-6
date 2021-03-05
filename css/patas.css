@@ -1,0 +1,211 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    /* Barra de rolagem vertical sempre visível */
+    overflow-y: scroll;
+}
+
+body {
+    background-color: #c1c1c1;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    color: #0f0f0f;
+}
+
+a {
+    text-decoration: none;
+    color: #004d00;
+}
+
+fieldset {
+    padding: 20px;
+}
+
+
+/*span {
+    display: contents;
+    height: 50px;
+    padding: 10px;
+    width: 50px;
+}*/
+
+.container {
+    background-color: #fcd685;
+    width: 940px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cabecalho,
+.rodape {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.cabecalho {
+    order: 1;
+    border-bottom: 1px solid #000000;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.cabecalho img {
+    width: 300px;
+    margin-right: 10px;
+}
+
+.cabecalho h1 {
+    font-size: 180%;
+    text-transform: uppercase;
+    color: #5c3401;
+}
+
+.cabecalho h2 {
+    font-size: 160%;
+    color: #6b3d01;
+    display: row;
+    text-align: right;
+}
+
+.cabecalho h3 button {
+    width: 150px;
+    font-weight: 100;
+    color: white;
+    background-color: #008903;
+    border-color: white;
+    border-spacing: 14px;
+    border-radius: 30px;
+}
+
+.menu {
+    width: 25%;
+    order: 3;
+    padding: 5px;
+    font-size: 110%;
+}
+
+.menu h3 {
+    padding: 5px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.menu h3::before {
+    content: url('/imagens/menu.png');
+    margin-right: 5px;
+}
+
+.menu li {
+    border-bottom: 1px solid #4ea947;
+}
+
+.menu li:first-of-type {
+    border-top: 1px solid #4ea947;
+}
+
+.menu li a {
+    padding: 20px;
+    display: block;
+    padding-left: 40px;
+    background: url('/imagens/seta.png') no-repeat 1px center;
+}
+
+.menu li a:hover {
+    background-color: #02d700;
+}
+
+.propaganda {
+    position: fixed;
+    left: 0;
+    top: 40%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-left: 13%;
+}
+
+.propagandaP {
+    position: fixed;
+    right: 0;
+    top: 40%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding-right: 17%;
+}
+
+.propaganda>* {
+    display: block;
+    height: 40px;
+    width: 30px;
+    margin: 30px;
+    border-radius: 10%;
+}
+
+.propaganda a img {
+    width: 60px;
+    height: 50px;
+    border-radius: 60%;
+}
+
+.corpo {
+    width: 75%;
+    order: 2;
+    border-right: 1px dashed #000000;
+    padding: 10px;
+}
+
+.corpo p {
+    text-align: justify;
+    line-height: 150%;
+    text-indent: 3em;
+}
+
+.corpo h3 {
+    text-transform: uppercase;
+    font-size: 110%;
+    font-weight: bold;
+    border-bottom: 1px dotted #000000;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    width: 50%;
+    background: url('imagens/seta.png') no-repeat 0 center;
+}
+
+.corpo img {
+    float: right;
+    margin: 10px;
+    width: 180px;
+}
+
+.corpo img.secundaria {
+    float: left;
+    width: 180px;
+}
+
+.opcao {
+    display: inline-block;
+    padding: 5px;
+}
+
+.rodape {
+    order: 4;
+    border-top: 1px solid #000000;
+    padding: 30px;
+    margin-top: 20px;
+}
+
+.rodape img {
+    width: 100px;
+    /* height: 50px; */
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.rodape .autor {
+    font-weight: bold;
+    color: #7e3d00;
+}
