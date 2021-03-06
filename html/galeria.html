@@ -6,13 +6,15 @@
     <title>Intituto Federal do Paraná-Campus Paranaguá</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="/css/reset.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/css/patas.css">
 </head>
 
 <body>
+
     <div class="container">
-        <div class="cabecalho">
+        <div class="cabecalho pb-5">
             <img src="/imagens/if.png" alt="Logotipo do IFPR">
             <div>
                 <h1>Instituto Federal do Paraná</h1>
@@ -31,29 +33,53 @@
             <a href="https://www.instagram.com/patasdoacolhimento/"><img src="/imagens/patas/insta.png" alt="icone do Instagram"></a>
         </div>
 
-        <div class="corpo">
+        <div class="corpo p-4">
             <h3>Galeria de Fotos</h3>
-            <span><img src="/imagens/patas/patasde.jpg" alt="timao"></span>
-            <span><img src="/imagens/patas/velhinho.jpg" alt="velhinho"></span>
-            <span><img src="/imagens/patas/pirata.jpg" alt="pirata"></span>
-            <span><img src="/imagens/patas/timao.jpg" alt="timão"></span>
-            <span><img src="/imagens/patas/velhinho2.jpg" alt="velhinho"></span>
-            <span><img src="/imagens/patas/timao2.jpg" alt="timao"></span>
-            <span><img src="/imagens/patas/timao4.jpg" alt="timao"></span>
-            <span><img src="/imagens/patas/pirata2.jpg" alt="timao"></span>
-            <span><img src="/imagens/patas/timão3.jpg" alt="timao"></span>
-            <span><img src="/imagens/patas/velhinhode.jpg" alt="timao"></span>
-            <span><img src="/imagens/patas/timaode.jpg" alt="timao"></span>
-            <span><img src="/imagens/patas/piratade.jpg" alt="timao"></span>
-            <span><img src="/imagens/patas/pitangade.jpg" alt="timao"></span>
-            <span><img src="/imagens/patas/amorade.jpg" alt="timao"></span>
+            <span><img class="img-fluid img-thumnail" src="/imagens/patas/patasde.jpg" alt="timao"></span>
+            <span><img class="img-fluid img-thumnail" src="/imagens/patas/velhinho.jpg" alt="velhinho"></span>
+            <span><img class="img-fluid img-thumnail" src="/imagens/patas/pirata.jpg" alt="pirata"></span>
+            <span><img class="img-fluid img-thumnail" src="/imagens/patas/timao.jpg" alt="timão"></span>
+            <span><img class="img-fluid img-thumnail" src="/imagens/patas/velhinho2.jpg" alt="velhinho"></span>
+            <span><img class="img-fluid img-thumnail" src="/imagens/patas/timao2.jpg" alt="timao"></span>
+            <span><img class="img-fluid img-thumnail" src="/imagens/patas/timao4.jpg" alt="timao"></span>
+            <span><img class="img-fluid img-thumnail" src="/imagens/patas/pirata2.jpg" alt="timao"></span>
+            <span><img class="img-fluid img-thumnail" src="/imagens/patas/timão3.jpg" alt="timao"></span>
+            <span><img class="img-fluid img-thumnail" src="/imagens/patas/velhinhode.jpg" alt="timao"></span>
+            <span><img class="img-fluid img-thumnail" src="/imagens/patas/timaode.jpg" alt="timao"></span>
+            <span><img class="img-fluid img-thumnail" src="/imagens/patas/piratade.jpg" alt="timao"></span>
+            <span><img class="img-fluid img-thumnail" src="/imagens/patas/pitangade.jpg" alt="timao"></span>
+            <span><img class="img-fluid img-thumnail" src="/imagens/patas/amorade.jpg" alt="timao"></span>
         </div>
+        
         <div class="rodape">
+           <form action="" method="post">
+                <fieldset>
+                    <legend>Contato</legend>
+                    <div class="mb-3">
+                        <label for="nome" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome" autofocus>
+                      </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
+                      </div>
+                </fieldset>
+                <button type="submit" class = "btn btn-dark">Enviar</button>
+           </form>
+            
+            
+        </div>
+        
+
+        <div class="rodape">
+           
+            
             <img src="/imagens/desenvolvedoras.jpg">
             <p>Desenvolvido por: <span class="autor">Bruna Loyola & Helena Maia</span></p>
         </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 </body>
 
 </html>
